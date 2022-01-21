@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserHome">
+    tools:context=".UserHome"
+    android:background="#F28500">
+
 
     <TextView
         android:id="@+id/hello_name"
-        android:layout_width="252dp"
-        android:layout_height="38dp"
+        android:layout_width="230dp"
+        android:layout_height="41dp"
         android:text="Hello, Name"
         android:textAlignment="viewStart"
         android:textColor="@android:color/black"
@@ -19,22 +21,21 @@
         app:fontFamily="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.169"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.198" />
-
-
+        app:layout_constraintVertical_bias="0.113" />
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="406dp"
-        android:layout_height="420dp"
+        android:layout_width="357dp"
+        android:layout_height="563dp"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -45,27 +46,28 @@
                 android:id="@+id/rest_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:divider="#F2141313"
-                android:dividerHeight="1dp" />
+                android:layout_margin="10dp"
+                android:divider="@color/black"
+                android:dividerHeight="1dp"  />
         </LinearLayout>
     </ScrollView>
 
 
-
-
     <Button
         android:id="@+id/oreders_btn_user"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="39dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="87dp"
+        android:layout_width="119dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_corner_view"
+        android:backgroundTint="#5D3FD3"
         android:text="Orders"
+        android:textColor="@color/white"
+        android:textSize="12sp"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/hello_name"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

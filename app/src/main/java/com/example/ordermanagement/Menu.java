@@ -63,8 +63,8 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
                     if (dataSnapshot.exists() && dataSnapshot.child(user.getUid()).exists()) { //if the user has menu
                         DataSnapshot user_menu = dataSnapshot.child(user.getUid());
                         if (type_dish == "Food") { //if we chose starters then add it to menu and add it to the list we display (arr)
-                            add_starterslist_menu_todata_menu(user_menu);
-                            get_arrtype(arr,data_menu.getfood_list() );
+                          add_starterslist_menu_todata_menu(user_menu);
+                           get_arrtype(arr,data_menu.getfood_list() );
 
 
                         } else if (type_dish == "Drink") { //same

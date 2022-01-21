@@ -59,7 +59,8 @@
         android:layout_height="89dp"
         android:background="@drawable/rounded_corner_view"
         android:hint="Decription"
-        android:inputType="textPersonName"
+        android:gravity="top"
+        android:inputType="textMultiLine"
 
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"

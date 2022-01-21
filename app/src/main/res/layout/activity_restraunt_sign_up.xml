@@ -138,6 +138,7 @@
         android:layout_marginBottom="220dp"
         android:background="@drawable/rounded_corner_view"
         android:hint="Add a Short Decription"
+        android:gravity="start"
         android:inputType="textMultiLine"
         android:lines="8"
         android:maxLines="10"
